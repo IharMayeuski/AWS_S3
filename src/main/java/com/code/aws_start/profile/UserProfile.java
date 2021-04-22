@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class UserProfile {
 
-    private UUID userProfileId;
+    private Integer userProfileId;
     private String userName;
     private String userProfileImageLink; //s3 key
 
@@ -25,11 +25,11 @@ public class UserProfile {
         return Objects.hash(userProfileId, userName, userProfileImageLink);
     }
 
-    public UUID getUserProfileId() {
+    public Integer getUserProfileId() {
         return userProfileId;
     }
 
-    public void setUserProfileId(UUID userProfileId) {
+    public void setUserProfileId(Integer userProfileId) {
         this.userProfileId = userProfileId;
     }
 
@@ -49,7 +49,7 @@ public class UserProfile {
         this.userProfileImageLink = userProfileImageLink;
     }
 
-    public UserProfile(UUID userProfileId, String userName, String userProfileImageLink) {
+    public UserProfile(Integer userProfileId, String userName, String userProfileImageLink) {
         this.userProfileId = userProfileId;
         this.userName = userName;
         this.userProfileImageLink = userProfileImageLink;
